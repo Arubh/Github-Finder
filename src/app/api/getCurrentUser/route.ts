@@ -3,8 +3,8 @@ import User from "@/models/User";
 import { NextResponse } from "next/server";
 
 export async function GET(request: any) {
-  const username = request.nextUrl.searchParams.get("username");
+  const userEmail = request.nextUrl.searchParams.get("userEmail");
   await connect();
-  const currentUser = await User.findOne({ username: username });
+  const currentUser = await User.findOne({ email: userEmail });
   return NextResponse.json({ currentUser });
 }
