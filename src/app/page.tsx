@@ -17,7 +17,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-            Teaming Up Made Easy: Find Your Ideal Coding Partners with GitHub Finder!
+            Teaming up Made Easy: Find Your Ideal Coding Partners with GitHub Finder!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
