@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Github Finder",
   description: "made by Aditya Raj",
 };
-
+ 
 export default async function RootLayout({
   children,
 }: {
