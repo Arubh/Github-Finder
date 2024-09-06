@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <section className="relative bg-[url(https://media.hackerearth.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg)] bg-cover bg-center bg-no-repeat">

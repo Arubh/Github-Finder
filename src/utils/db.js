@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 
 const connect = async () => {
-  const MONGO='mongodb+srv://aditya2108raj:RqhXjWFhZUgTzdiq@cluster0.qwshf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
   try {
-    await mongoose.connect(MONGO, {
+    await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -14,4 +13,3 @@ const connect = async () => {
 };
 
 export default connect;
- 
