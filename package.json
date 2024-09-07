@@ -11,14 +11,18 @@
   "dependencies": {
     "@lobehub/ui": "^1.137.7",
     "axios": "^1.6.0",
+    "clsx": "^2.1.1",
     "flowbite-react": "^0.7.6",
+    "framer-motion": "^11.5.4",
     "mongoose": "^8.0.0",
     "next": "14.0.1",
     "next-auth": "^4.24.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "socket.io-client": "^4.7.4"
+    "simplex-noise": "^4.0.3",
+    "socket.io-client": "^4.7.4",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

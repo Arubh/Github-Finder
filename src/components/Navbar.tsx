@@ -133,7 +133,7 @@ const Navbar = () => {
 
   const { data: session }: any = useSession();
   return (
-    <div className="bg-[rgb(10,1,31)]">
+    <div className="bg-[rgb(10,1,31)] ">
       {toggleBtn && <Menu />}
       <div className="mx-4">
         <ul className="flex justify-between items-center  p-4">
