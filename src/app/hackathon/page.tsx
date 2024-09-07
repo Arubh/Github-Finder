@@ -10,14 +10,14 @@ import ViewHackathon from "@/components/ViewHackathon";
 
 const getCurrentUser = async (email: any) => {
   try {
-    const res = await fetch(`/api/getCurrentUser?userEmail=${email}`);
+    const res = await fetch(`/api/getCurrentUser? userEmail=${email}`);
     if (!res.ok) {
       throw new Error("Failed to fetch hackathons");
     }
 
     return res.json();
   } catch (error) {
-    console.log("Error loading hackathons: ", error);
+    console.log("Error loading hackathons: ", error); 
   }
 };
 

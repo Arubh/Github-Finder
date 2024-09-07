@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -26,6 +27,7 @@ export default async function RootLayout({
           <div className="mx-auto text-2xl gap-2 mb-10 ">
             <Navbar />
             {children}
+            <Footer />
           </div>
         </SessionProvider>
       </body>
