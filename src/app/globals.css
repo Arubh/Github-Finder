@@ -189,3 +189,143 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+/* From Uiverse.io by Smit-Prajapati */ 
+.orange {
+  color: rgb(4,21,216);
+}
+
+.form-container-hack  {
+  max-width: 700px;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid rgb(4,21,216);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.form-container-hack .heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container-hack .form .input-hack {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+  font-size: 18px;
+}
+
+.form-container-hack .form .input-hack:focus {
+  border-left: 5px solid rgb(4,21,216);
+}
+
+.form-container-hack .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: rgb(4,21,216);
+  font-weight: bold;
+  font-size: 18px;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container-hack .form .textarea:focus {
+  border-left: 5px solid rgb(4,21,216);
+}
+
+.form-container-hack .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container-hack .form .button-container .send-button {
+  flex-basis: 70%;
+  background: rgb(4,21,216);
+  padding: 10px;
+  color: #eff4f6;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container-hack .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid rgb(4,21,216);
+  color: rgb(4,21,216);
+}
+
+.form-container-hack .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px rgb(4,21,216));
+  flex-basis: 30%;
+}
+
+.form-container-hack .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: rgb(4,21,216);
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container-hack .form .button-container .reset-button-container .reset-button:hover {
+  background: rgb(4,21,216);
+  color: #eff3f5;
+}
+.orange {
+  color: rgb(4,21,216);
+}
+
+.form-container-card  {
+  max-width: 500px;
+  background-color: #001925;
+  padding: 25px;
+  border-left: 5px solid #FFEA00;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.form-container-card .heading {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container-card .form .input-hack {
+  color: #87a4b6; 
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+  font-size: 15px;
+  border-left: 5px solid #FFEA00;
+}
+
+
+
+
