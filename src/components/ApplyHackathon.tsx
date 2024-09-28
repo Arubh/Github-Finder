@@ -24,7 +24,7 @@ const ApplyHackathon = ({ id, userEmail }: any) => {
       onClick={() => {
         addUsertoHackathon();
       }}
-      className="bg-[rgb(4,21,216)] text-white font-bold px-10 py-3 text-[15px] rounded-[5px] mr-4"
+      className="bg-[rgb(4,21,216)] text-white font-bold px-10 py-3 text-[15px] rounded-[5px] mr-1"
     >
       Apply
     </button>

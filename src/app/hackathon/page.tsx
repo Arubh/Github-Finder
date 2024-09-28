@@ -171,7 +171,7 @@ const Page = () => {
         </div> */}
 
         <div className="">
-          <div className="block text-white text-xl font-extrabold   mt-20">
+          <div className="block text-white text-xl font-extrabold mt-20">
             <div className="mx-auto w-[300px]">Closed Hackathons</div>
           </div>
           <div className="flex flex-wrap gap-10 justify-center items-center">
@@ -187,6 +187,7 @@ const Page = () => {
                   id={hackathon._id}
                   userEmail={session?.user?.email}
                   isActive={false}
+                  viewOnly={false}
                 />
               ))
             ) : (

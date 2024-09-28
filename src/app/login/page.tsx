@@ -35,9 +35,9 @@ const Login = () => {
       //   </div>
       // </div>
       /* From Uiverse.io by SalladShooter */ 
-<div className="flex">
+<div className="flex mb-[-39px]">
   <Waves />
-<div className="light-button flex justify-center items-center my-auto lg:w-[30%] w-[50%] rounded-[15px] flex flex-col items-center mt-10 lg:static absolute left-[26%]">
+{/* <div className="light-button justify-center my-auto lg:w-[30%] w-[50%] rounded-[15px] flex flex-col items-center mt-10 lg:static absolute left-[26%]">
   <button className="bt" onClick={()=>{signIn("github")}}>
     <div className="light-holder">
       <div className="dot"></div>
@@ -52,6 +52,13 @@ const Login = () => {
       <p>GitHub</p>
     </div>
   </button>
+</div> */}
+<div className="w-[20%] flex justify-center items-center lg:static absolute left-[40%] bottom-[20%]" onClick={()=>{signIn("github")}}>
+<button className="btn-31">
+  <span className="text-container">
+    <span className="text">Github</span>
+  </span>
+</button>
 </div>
 </div>
 

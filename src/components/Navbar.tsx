@@ -43,12 +43,12 @@ const Navbar = () => {
     return (
       <div className="z-[1000] flex pt-8 bg-[rgb(10,1,31)] w-[290px] delay-75 rounded-lg shadow-[0px_-8px_10px_0px_rgba(107,114,128,0.5)] flex-col list-none md:invisible visible absolute right-2 top-20 items-end justify-end p-4">
         <Link href="/" passHref className="w-full">
-          <div className="hover:bg-[rgb(4,21,216)] hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-serif" onClick={() => setToggleBtn(!toggleBtn)}>
+          <div className="hover:bg-[rgb(4,21,216)] hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-sans" onClick={() => setToggleBtn(!toggleBtn)}>
             Home
           </div>
         </Link>
         <Link href="/hackathon" passHref className="w-full mt-[8px]">
-          <li className="hover:bg-[rgb(4,21,216)] mt-2 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] font-serif" onClick={() => setToggleBtn(!toggleBtn)}>
+          <li className="hover:bg-[rgb(4,21,216)] mt-2 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] font-sans" onClick={() => setToggleBtn(!toggleBtn)}>
             Hackathons
           </li>
         </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
         </li>
         {session ? (
           <Link href="/chat" className="w-full" passHref onClick={() => setToggleBtn(!toggleBtn)}>
-            <div className="hover:bg-[rgb(4,21,216)] mt-3 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-serif" onClick={() => setToggleBtn(!toggleBtn)}>
+            <div className="hover:bg-[rgb(4,21,216)] mt-3 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-sans" onClick={() => setToggleBtn(!toggleBtn)}>
               Chat
             </div>
           </Link>
@@ -78,19 +78,19 @@ const Navbar = () => {
         {!session ? (
           <Link href="/login" passHref className="mx-auto" onClick={() => setToggleBtn(!toggleBtn)}>
             <button className="login-btn">
-              <span className="login-btn-content text-[18px] font-serif">Login</span>
+              <span className="login-btn-content text-[18px] font-sans">Login</span>
             </button>
           </Link>
         ) : (
           <>
             <Link href="/profile" className="w-full" passHref onClick={() => setToggleBtn(!toggleBtn)}>
-              <li className="hover:bg-[rgb(4,21,216)] mt-4 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-serif" onClick={() => setToggleBtn(!toggleBtn)}>
+              <li className="hover:bg-[rgb(4,21,216)] mt-4 hover:translate-y-[-10px] h-[40px] transition duration-500 rounded-[5px] text-center py-1 w-full list-none text-[16px] align-middle font-sans" onClick={() => setToggleBtn(!toggleBtn)}>
                 Profile
               </li>
             </Link>
 
             <button className="login-btn mx-auto mt-3" onClick={() => signOut()}>
-              <span className="login-btn-content text-[20px] font-serif">Logout</span>
+              <span className="login-btn-content text-[20px] font-sans">Logout</span>
             </button>
           </>
         )}
@@ -147,14 +147,14 @@ const Navbar = () => {
           </div>
           <div className="flex gap-10">
             <div className="flex gap-10 invisible md:visible absolute md:relative">
-              <Link href="/" passHref className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-serif">
+              <Link href="/" passHref className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-sans">
                 Home
               </Link>
-              <Link href="/hackathon" passHref className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-serif">
+              <Link href="/hackathon" passHref className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-sans">
                 Hackathons
               </Link>
             </div>
-            <div className="input-container text-black pt-2 font-serif flex md:visible invisible">
+            <div className="input-container text-black pt-2 font-sans flex md:visible invisible">
               <input
                 className="input w-full h-8 align-middle text-base px-4 py-2 focus:outline-none rounded-[8px]"
                 value={inputText}
@@ -176,7 +176,7 @@ const Navbar = () => {
                       setInputText("");
                       setCrossButton(false)
                     }}>
-                      <li className="hover:text-gray-300 text-sm px-4 py-2 font-serif">
+                      <li className="hover:text-gray-300 text-sm px-4 py-2 font-sans">
                         {user.name}
                       </li>
                     </Link>
@@ -189,7 +189,7 @@ const Navbar = () => {
             <div className="flex gap-10 invisible md:visible absolute md:relative">
               {session ? (
                 <Link href="/chat" passHref>
-                  <li className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-serif">
+                  <li className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-sans">
                     Chat
                   </li>
                 </Link>
@@ -199,18 +199,18 @@ const Navbar = () => {
               {!session ? (
                 <Link href="/login" passHref>
                   <button className="login-btn">
-                    <span className="login-btn-content text-[20px] font-serif">Login</span>
+                    <span className="login-btn-content text-[20px] font-sans">Login</span>
                   </button>
                 </Link>
               ) : (
                 <>
                   <Link href="/profile" passHref>
-                    <li className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-serif">
+                    <li className="hover:text-gray-300 hover:scale-[1.1] transition duration-500 text-[20px] pt-2 hover:cursor-pointer font-sans">
                       Profile
                     </li>
                   </Link>
                   <button className="login-btn" onClick={() => signOut()}>
-                    <span className="login-btn-content text-[20px] font-serif">Logout</span>
+                    <span className="login-btn-content text-[20px] font-sans">Logout</span>
                   </button>
                 </>
               )}

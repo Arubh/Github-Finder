@@ -93,6 +93,7 @@ export const Waves = ({
         containerClassName
       )}
     >
+      <div className="text-center pt-[250px] font-bold text-[30px] ">Instant Github login at your fingertips</div>
       <svg className="hidden">
         <defs>
           <filter id="blurMe">
